@@ -15,7 +15,7 @@ app.use(express.json());
 // Cors Middleware
 app.use(cors())
 //Setting up static directory
-app.use(serveStatic(__dirname + "/dist"));
+
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Use Passport Middleware
